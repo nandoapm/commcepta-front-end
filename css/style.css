@@ -17,11 +17,9 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  
 }
 
 /** configuração do menu **/
-
 #cabecalho {
   width: 100%;
   height: 60px;
@@ -38,16 +36,12 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
-
 }
 
 .img {
   width: 120px;
   height: 30px;
   padding-top: 15px;
-  justify-items: center;
-
 }
 
 nav {
@@ -66,7 +60,6 @@ a:hover {
 }
 
 /** configuração do titulo **/
-
 .titulo {
   margin: 10px;
   width: 100%;
@@ -89,6 +82,19 @@ a:hover {
   height: 70px;
   margin: 10px;
   border-radius: 50%;
+}
+
+.texto-titulo {
+  padding: 15px 5px;
+  text-align: left;
+  color: #bebebe;
+}
+
+.texto-titulo span {
+  padding: 15px 5px;
+  color: #000000;
+  text-align: left;
+  font-weight: bold;
 }
 
 /** configuração dos cards **/
@@ -121,6 +127,54 @@ a:hover {
   margin-top: 25px;
 }
 
+.box-card h5 {
+  text-align: left;
+  color: #bebebe;
+}
+
+/** configuração para o script **/
 .ocultar {
   display: none;
+}
+
+/** configuração para o responsivo **/
+@media screen and (min-width:0px) and (max-width:500px) {
+  .titulo {
+    margin: 10px;
+  }
+
+  .box-titulo {
+    width: 400px;
+  }
+
+  .box-card {
+    width: 460px;
+  }
+
+  #img {
+    padding-left: 10px;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width:501px) and (max-width:910px) {
+  
+  .titulo {
+    width: 900px;
+  }
+
+  .box-card {
+    width: 900px;
+  }
+
+  #img {
+    padding-left: 10px;
+  }
+  
+  nav {
+    padding-right: 10px;
+  }
 }
