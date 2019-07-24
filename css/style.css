@@ -5,51 +5,69 @@
 }
 
 body{
-	text-align: center;
-	
+  text-align: center;
+  background: linear-gradient( #dcdcdc, #f8f8f8) no-repeat;
 }
 
-/** configuração do menu **/
-
-/** configuração do titulo **/
-
-/** configuração dos cards **/
 #conteudo {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#DCDCDC, #F5F5F5);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-#conteudo-principal {
-  width: 700px;
+  width: 900px;
   height: 100%;
   margin: 0px auto;
-  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  
 }
 
-.titulo {
+/** configuração do menu **/
+
+#cabecalho {
   width: 100%;
-  height: 80px; 
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background: linear-gradient(to left, #000b2d, #48d1cc);
 }
 
-.box {
-  width: 210px;
-  height: 90px;
-  background: #F8F8FF;
-  margin: 10px;
-  box-shadow: 3px 3px #DCDCDC;
-  border: 1px #dcdcdc;
+.menu {
+  width: 880px;
+  height: 80px;
+  margin: 0% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+
 }
 
-.boxprincipal {
+.img {
+  width: 120px;
+  height: 30px;
+  padding-top: 15px;
+  justify-items: center;
+
+}
+
+nav {
+  padding-top: 20px;
+  text-align: right;
+}
+
+a {
+  color: #DCDCDC;
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:hover {
+  color: #002753;
+}
+
+/** configuração do titulo **/
+
+.titulo {
   margin: 10px;
   width: 100%;
   height: 100px;
@@ -57,29 +75,52 @@ body{
   box-shadow: 3px 2px #DCDCDC;
 }
 
-.box:hover {
-  background:#000b2d;
-  color: #F5F5F5;
-}
-
-.card {
+.box-titulo {
+  width: 600px;
+  height: 90px;
+  background: #F8F8FF;
+  margin: 10px;
   display: flex;
   flex-direction: row;
 }
 
-.card img {
+.box-titulo img {
   width: 70px;
   height: 70px;
   margin: 10px;
   border-radius: 50%;
 }
 
-.card h3 {
+/** configuração dos cards **/
+.box-card {
+  width: 280px;
+  height: 90px;
+  background: #F8F8FF;
+  margin: 10px;
+  box-shadow: 3px 3px #DCDCDC;
+  border: 1px #dcdcdc;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.box-card:hover {
+  background:#002753;
+  color: #F5F5F5;
+}
+
+.box-card img {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.box-card h3 {
   text-align: left;
   margin-top: 25px;
 }
 
-#titulo {
-  text-align: left;
-  margin-top: 20px;
+.ocultar {
+  display: none;
 }
