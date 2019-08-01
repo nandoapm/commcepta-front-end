@@ -7,7 +7,9 @@
 }
 body {
     text-align: center;
+    height: 600px;
     background: linear-gradient( #dcdcdc, #f8f8f8) no-repeat;
+    overflow: hidden;
 }
 
 .layout {
@@ -67,8 +69,8 @@ body {
 
  label[for="btn-menu"] {
   padding: 0;
-  background-color: #000b2d;
-  color: #fff;
+  background-color: #002753;
+  color: #ffffff;
   font-family: 'Arial';
   text-align: center;
   font-size: 30px;
@@ -86,13 +88,17 @@ body {
 .container {
   width: 100%;
   display: flex;
-  flex-direction: column; 
-  background: linear-gradient( #dcdcdc, #f8f8f8) no-repeat;
+  flex-direction: column;
+}
+
+.box-container {
+  width: 990px;
+  margin: 0px auto;
+  padding-top: 10px; 
 }
 
 .box-container-1 {
   height: 110px;
-  margin: 5px 300px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -113,6 +119,7 @@ body {
   margin-left: 10px;
   border-radius: 50%;
   align-items: left;
+  background: red;
 }
 
 .c1 h3 {
@@ -131,11 +138,8 @@ body {
   width: 150px;
 }
 
-
-
 #box-container-2 {
   height: 100%;
-  margin: 5px 300px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -149,6 +153,11 @@ body {
   background: #f8f8f8;
   box-shadow: 3px 2px #dcdcdc;
   cursor: pointer;
+}
+
+.card-2:hover, .card-2.active {
+  background: #002753;
+  color: #f8f8f8;
 }
 
 .btn {
@@ -183,11 +192,7 @@ h4 {
 
 
 /* estilização do responsiva */
-@media screen and (min-width:501px) and (max-width:840px){
-  
-}
-
-@media screen and (min-width:0px) and (max-width:866px){
+@media screen and (min-width:0px) and (max-width:516px){
   label[for="btn-menu"] {
     display: block;
     position: relative;
@@ -205,6 +210,7 @@ h4 {
     margin-top: 50px;
     margin-left: -150%;
     transition: all .4s;
+    z-index: 1;
     
    }
    .img {
@@ -214,7 +220,69 @@ h4 {
    .menu ul li {
     width: 100%;
     float: none;
-    background: #000b2d;
+    background: #002753;
    }
 
+   .menu ul li:hover {
+    background: #ffffff;
+   }
+
+
+  .box-container {
+    margin: 5px 10px;
+    width: 460px;
+  }
+
+  .box-container-1 {
+    width: 100%;
+  }
+
+  #box-container-2 {
+    width: 100%;
+  }
+
+  .card-2 {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width:517px) and (max-width:995px){
+  .box-header {
+    margin: 5px 20px;
+  }
+
+  .box-container {
+    width: 100%;
+    margin: 5px 10px;
+  }
+  
+  .card-2 {
+    width: 96%;
+  }
+
+  .box-container-1 {
+    width: 97%;
+  }
+}
+
+@media screen and (min-width:996px) and (max-width:1080px){
+  .box-header {
+    margin: 5px 20px;
+  }
+  
+  .box-container {
+    width: 97%;
+    margin: 5px 20px;
+  }
+
+  .card-2 {
+    width: 470px;
+  }
+}
+
+@media screen and (min-width:1081px) and (max-width:1560px){
+  .card-2 {
+    width: 480px;
+  }
 }
