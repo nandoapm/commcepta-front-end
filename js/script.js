@@ -7,7 +7,7 @@ function mostrar(){
   document.getElementById(obj).hidden=false; //Ocultar o elemento
 }
 
-function inicia(){
+function iniciar(){
   for(var i=1; i<10; i++){
   document.getElementById("c"+i).hidden=true; //Ocultar o card
   }
@@ -23,4 +23,4 @@ function inicia(){
   document.getElementById("btnc9").addEventListener("click",mostrar);
 }
 
-window.addEventListener("load",inicia);
+window.addEventListener("load",iniciar);
